@@ -1,9 +1,17 @@
-import './style.css'
+import './style.css';
 
-const BuyBtn = () => {
-	return ( <button className=" h4-title buy-btn">
-		Купить
-	</button> );
+interface StatusProps {
+	status: boolean;
 }
- 
+
+const BuyBtn = ({ status }: StatusProps) => {
+	return status ? (
+		<button className=' h4-title buy-btn'>Купить</button>
+	) : (
+		<button disabled className=' h4-title buy-btn'>
+			Купить
+		</button>
+	);
+};
+
 export default BuyBtn;

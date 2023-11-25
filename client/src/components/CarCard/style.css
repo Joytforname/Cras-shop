@@ -44,23 +44,23 @@
 	overflow: hidden;
 }
 
-.item-model-year-color{
+.item-model-year-color {
 	display: flex;
 	gap: 14px;
 	color: var(--gray-3);
 }
 
-.item-model-year{
+.item-model-year {
 	height: 16px;
 	width: 67px;
 }
 
-.item-color{
+.item-color {
 	height: 16px;
 	width: 353px;
 }
 
-.item-price{
+.item-price {
 	height: 18px;
 	width: 434px;
 }
@@ -70,5 +70,44 @@
 	display: flex;
 	flex-direction: row;
 	gap: 25px;
+	align-items: center;
+}
+
+.item-not-available-img {
+	display: flex;
+	width: 445px;
+	height: 310px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 15px 15px 0px 0px;
+	border: 1px solid var(--gray-2);
+}
+.item-not-available {
+	position: relative;
+}
+
+.item-not-available-back {
+	position: absolute;
+	background-color: var(--gray-0-white);
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	border-radius: 15px 15px 0px 0px;
+	border: 1px solid var(--gray-2);
+}
+
+.item-not-available-text {
+	width: 237px;
+	height: 59px;
+	background-color: var(--gray-4-black);
+	color: var(--gray-0-white);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
