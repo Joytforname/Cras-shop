@@ -61,7 +61,7 @@ const CarCard: React.FC<CarProps> = observer(({ car }) => {
 			</div>
 			<div className='item-buttons'>
 				<BuyBtn status={car.availability}/>
-				<SaveBtn status={car.availability} onClick={handleSaveCar} />
+				<SaveBtn status={car.availability} carSaver={handleSaveCar} />
 			</div>
 		</div>
 	);

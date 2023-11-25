@@ -1,15 +1,15 @@
 import './style.css';
 
 interface SaveBtnProps {
-	onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+	carSaver: (e: React.MouseEvent<HTMLButtonElement>) => void;
 	status: boolean;
 }
 
-const SaveBtn: React.FC<SaveBtnProps> = ({ status, onClick }) => {
+const SaveBtn: React.FC<SaveBtnProps> = ({ status, carSaver }) => {
 	const btnSwitcher = (e: React.MouseEvent<HTMLButtonElement>): void => {
 		e.currentTarget.classList.toggle('active');
-		if (onClick) {
-			onClick(e); 
+		if (carSaver) {
+			carSaver(e);
 		}
 	};
 
