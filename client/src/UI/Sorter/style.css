@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sorter-wrapper {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.sorter-icon {
+	width: 14.667px;
+	height: 16px;
+}
+
+.sorter {
+	outline: none;
+	border: none;
+	color: var(--neutral-grey-10);
+	background-color: var(--gray-0-white);
+	cursor: pointer;
+}
+
+
+select {
+	appearance: none;
+}
+
+option {
+	color: var(--gray-4-black);
+	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}
+

@@ -1,0 +1,70 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.header {
+	height: 70px;
+	width: 1920px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 46px;
+	border-bottom: 1px solid var(--gray-2);
+}
+
+.logo {
+	margin-left: 40px;
+	width: 134px;
+	height: 18.49px;
+	flex-shrink: 0;
+	margin-right: 21px;
+	background-image: url('./img/logo.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	margin-right: 136px;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 806px;
+	
+}
+
+.location {
+	height: 18px;
+	margin-right: 31px;
+	white-space: nowarp;
+}
+
+.tel {
+	width: 138px;
+	height: 18px;
+}
+
+.saved-btn {
+	width: 126px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.heart {
+	width: 27px;
+	height: 24px;
+	margin-right: 12px;
+	background-image: url('./img/heart.svg');
+}

@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.select-compl-btn {
+	display: inline-flex;
+	height: 56px;
+	width: 259px;
+	padding: 19px 34px;
+	align-items: flex-start;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--blue-2);
+	color: var(--gray-0-white);
+	cursor: pointer;
+	gap: 10px;
+}
+
+.select-compl-btn:hover {
+	background-color: var(--blue-3);
+}
+
+.select-compl-btn:active {
+	background-color: var(--blue-4);
+}

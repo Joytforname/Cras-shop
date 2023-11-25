@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.trash-btn {
+	display: flex;
+	width: 56px;
+	height: 57px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: solid 2px var(--red-1);
+	cursor: pointer;
+}
+
+.trash-icon {
+	fill: var(--red-1);
+}
+
+.trash-btn:hover {
+	border: none;
+	background-color: var(--red-1);
+	.trash-icon {
+		fill: var(--gray-0-white);
+	}
+}
+
+.trash-btn:active {
+	border: none;
+	background-color: var(--red-2);
+	.trash-icon {
+		fill: var(--gray-0-white);
+	}
+}

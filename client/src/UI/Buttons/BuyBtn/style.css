@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.buy-btn {
+	height: 56px;
+	max-width: 254px;
+	color: var(--gray-0-white);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--blue-2);
+	border: none;
+	border-radius: 5px;
+	padding: 19px 99px;
+	cursor: pointer;
+}
+
+.buy-btn:hover {
+	background-color: var(--blue-3);
+}
+
+.buy-btn:active {
+	background-color: var(--blue-4);
+}
+
+.buy-btn:disabled {
+	background-color: var(--gray-2);
+	color: var(--gray-2-black)
+}
+
+

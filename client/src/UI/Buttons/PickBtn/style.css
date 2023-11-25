@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pick-btn {
+	height: 60px;
+	width: 207px;
+	display: inline-flex;
+	padding: 16px 38px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--blue-2);
+	color: var(--gray-0-white);
+	cursor: pointer;
+}
+
+.pick-btn:hover {
+	background-color: var(--blue-3);
+}
+
+.pick-btn:active {
+	background-color: var(--blue-4);
+}
