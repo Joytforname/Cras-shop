@@ -1,6 +1,9 @@
 import './style.css';
+import React from 'react';
 
-const Sorter = () => {
+const Sorter: React.FC<{
+	handleSort: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+}> = ({ handleSort }) => {
 	return (
 		<div className='sorter-wrapper'>
 			<svg
@@ -20,14 +23,14 @@ const Sorter = () => {
 					fill='black'
 				/>
 			</svg>
-			<select className='sorter h4-title' name='sorter'>
-				<option value='Сначала в наличии'> Сначала в наличии</option>
-				<option value='По имени (A-Z)'>По имени (A-Z)</option>
-				<option value='По имени (Z-A)'>По имени (Z-A)</option>
-				<option value='Сначала новее'>Сначала новее</option>
-				<option value='Сначала старше'>Сначала старше</option>
-				<option value='Сначала дешевле'>Сначала дешевле</option>
-				<option value='Сначала дороже'>Сначала дороже</option>
+			<select className='sorter h4-title' name='sorter' onChange={handleSort}>
+				<option value='availability'>Сначала в наличии</option>
+				<option value='a-z'>По имени (A-Z)</option>
+				<option value='z-a'>По имени (Z-A)</option>
+				<option value='new-first'>Сначала новее</option>
+				<option value='old-first'>Сначала старше</option>
+				<option value='lowPrice'>Сначала дешевле</option>
+				<option value='highPrice'>Сначала дороже</option>
 			</select>
 		</div>
 	);

@@ -9,22 +9,22 @@ import carsStore from './stores/cars-store';
 import SavedCarsList from './pages/SavedCarsList/SavedCarsList';
 
 const App: FC = () => {
-
-	const { data, error, isLoading } = useQuery('cars', getAllCars);
 	const { carsList, setCarsList } = carsStore;
+	
+		const { data, error, isLoading } = useQuery('cars', getAllCars);
 
-	if (data) {
-		setCarsList([...data]);
-	}
+		if (data) {
+			setCarsList([...data]);
+		}
 
-	if (isLoading) {
-		return <div>Loading...</div>;
-	}
+		if (isLoading) {
+			return <div>Loading...</div>;
+		}
 
-	if (error) {
-		<div>Error occurred: {error.toString()}</div>;
-	}
-
+		if (error) {
+			<div>Error occurred: {error.toString()}</div>;
+		}
+	
 	return (
 		<div>
 			<Header />

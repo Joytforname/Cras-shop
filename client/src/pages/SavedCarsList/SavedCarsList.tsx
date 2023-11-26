@@ -2,6 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react-lite';
 import CarCard from '../../components/CarCard/CarCard';
 import  savedCarsStore  from '../../stores/saved-cars-store';
+import './style.css'
 
 const SavedCarsList: React.FC = observer(() => {
 
