@@ -7,8 +7,10 @@ import { NavLink } from 'react-router-dom';
 const Heder = () => {
 	return (
 		<div className='header'>
-			<div className='logo'></div>
 			<NavLink to='/'>
+			<div className='logo'></div>
+			</NavLink>
+			<NavLink className='link h3-title' to='/'>
 				<CtalogBtn />
 			</NavLink>
 

@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import { Car } from '../../graphql/generated';
 import SelectComplBtn from '../../UI/Buttons/SelectCoplBtn/SelectComplBtn';
 import TrashBtn from '../../UI/Buttons/TrashBtn/TrashBtn';
@@ -9,17 +9,12 @@ interface CarProps {
 	car: Car;
 }
 
-const SavedCarCard = ({car}: CarProps) => {
+const SavedCarCard = ({ car }: CarProps) => {
 	const removeCar = () => {
-			savedCarsStore.setSavedCars(
-				savedCarsStore.savedCars.filter((savedCar) => savedCar.id !== car.id)
-			);
-			console.log('removeCarsStore: ', savedCarsStore.savedCars.length);
-		}
-	
-
-
-	
+		savedCarsStore.setSavedCars(
+			savedCarsStore.savedCars.filter((savedCar) => savedCar.id !== car.id)
+		);
+	};
 	return (
 		<div className='saved-item-card'>
 			<img
@@ -50,6 +45,6 @@ const SavedCarCard = ({car}: CarProps) => {
 			</div>
 		</div>
 	);
-}
- 
+};
+
 export default SavedCarCard;

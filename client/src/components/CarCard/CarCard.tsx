@@ -11,6 +11,7 @@ interface CarProps {
 }
 
 const CarCard = observer(({ car }: CarProps) => {
+	const saveStatus: boolean = savedCarsStore.savedCars.includes(car);
 	const handleSaveCar = () => {
 		const isCarSaved = savedCarsStore.savedCars.some(
 			(savedCar) => savedCar.id === car.id
@@ -18,13 +19,10 @@ const CarCard = observer(({ car }: CarProps) => {
 
 		if (!isCarSaved) {
 			savedCarsStore.setSavedCars([...savedCarsStore.savedCars, car]);
-			console.log('savedCarsStore: ', savedCarsStore.savedCars.length);
-			
 		} else {
 			savedCarsStore.setSavedCars(
 				savedCarsStore.savedCars.filter((savedCar) => savedCar.id !== car.id)
 			);
-			console.log('removeCarsStore: ', savedCarsStore.savedCars.length);
 		}
 	};
 
@@ -65,7 +63,7 @@ const CarCard = observer(({ car }: CarProps) => {
 				<BuyBtn status={car.availability} />
 
 					<SaveBtn
-					
+						saveStatus={saveStatus}
 						status={car.availability}
 						carSaver={handleSaveCar}
 					/>
