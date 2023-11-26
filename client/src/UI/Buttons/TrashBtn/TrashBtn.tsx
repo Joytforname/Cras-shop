@@ -1,9 +1,13 @@
 import './style.css';
 import trashIcon from './img/trashIcon.svg';
 
-const TrashBtn = () => {
+type Props = {
+	remover: () => void,
+};
+
+const TrashBtn = ({remover}: Props) => {
 	return (
-		<button className='trash-btn'>
+		<button className='trash-btn' onClick={remover}>
 			<svg
 				className='trash-icon'
 				xmlns='http://www.w3.org/2000/svg'

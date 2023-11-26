@@ -10,7 +10,7 @@ interface CarProps {
 	car: Car;
 }
 
-const CarCard: React.FC<CarProps> = observer(({ car }) => {
+const CarCard = observer(({ car }: CarProps) => {
 	const handleSaveCar = () => {
 		const isCarSaved = savedCarsStore.savedCars.some(
 			(savedCar) => savedCar.id === car.id
@@ -44,7 +44,9 @@ const CarCard: React.FC<CarProps> = observer(({ car }) => {
 						alt={`${car.brand} ${car.model}`}
 					/>
 					<div className='item-not-available-back'>
-						<div className='item-not-available-text h3-title'>Нет в наличии</div>
+						<div className='item-not-available-text h3-title'>
+							Нет в наличии
+						</div>
 					</div>
 				</div>
 			)}
@@ -60,8 +62,14 @@ const CarCard: React.FC<CarProps> = observer(({ car }) => {
 				<div className='item-price h4-title'>от ${formatPrice(car.price)}</div>
 			</div>
 			<div className='item-buttons'>
-				<BuyBtn status={car.availability}/>
-				<SaveBtn status={car.availability} carSaver={handleSaveCar} />
+				<BuyBtn status={car.availability} />
+
+					<SaveBtn
+						
+						status={car.availability}
+						carSaver={handleSaveCar}
+					/>
+				
 			</div>
 		</div>
 	);

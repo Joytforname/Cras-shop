@@ -1,0 +1,60 @@
+.saved-item-card {
+	display: flex;
+	width: 1838px;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.saved-item-img {
+	width: 443px;
+	height: 308.607px;
+	flex-shrink: 0;
+	border-radius: 11.573px 11.573px 0px 0px;
+	margin-right: 20px;
+}
+
+.saved-item-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.saved-car-about {
+	height: 183.6px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.saved-item-name {
+	width: 830px;
+	height: 42px;
+	color: var(--gray-4-black);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.saved-card-description {
+	width: 810px;
+	height: 48px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.saved-item-price {
+	width: 434px;
+	height: 28px;
+	margin-top: 20px;
+	margin-bottom: 21px;
+}
+
+.p1-text {
+	color: var(--gray-3);
+}
+
+.saved-item-btns {
+	display: flex;
+	column-gap: 20px;
+	height: 34px;
+}

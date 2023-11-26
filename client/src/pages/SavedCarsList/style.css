@@ -1,0 +1,25 @@
+.saved-cars-page {
+	width: 1920px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.saved-cars-count {
+	width: 780px;
+	color: var(--gray-4-black, #000);
+	font-family: Inter;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 58px;
+	margin-left: 40px;
+}
+
+.saved-cars {
+	margin-top: 90px;
+	margin-left: 42px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
