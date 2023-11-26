@@ -39,7 +39,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin-left: 806px;
-	
 }
 
 .location {
@@ -67,4 +66,33 @@ body {
 	height: 24px;
 	margin-right: 12px;
 	background-image: url('./img/heart.svg');
+}
+
+.active {
+	font-family: Inter;
+	font-size: 24px;
+	font-style: 'normal';
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--gray-4-black);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.link {
+	font-family: Inter;
+	font-size: 24px;
+	font-style: 'normal';
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--gray-4-black);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: none;
 }

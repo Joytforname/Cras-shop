@@ -65,7 +65,7 @@ const CarCard = observer(({ car }: CarProps) => {
 				<BuyBtn status={car.availability} />
 
 					<SaveBtn
-						
+					
 						status={car.availability}
 						carSaver={handleSaveCar}
 					/>

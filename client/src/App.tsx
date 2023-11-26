@@ -7,6 +7,7 @@ import getAllCars from './utils/getCars';
 import { useQuery } from 'react-query';
 import carsStore from './stores/cars-store';
 import SavedCarsList from './pages/SavedCarsList/SavedCarsList';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: FC = () => {
 	const { carsList, setCarsList } = carsStore;
@@ -26,11 +27,15 @@ const App: FC = () => {
 		}
 	
 	return (
-		<div>
-			<Header />
-			<CarsList cars={carsList} />
-			<SavedCarsList />
-			<Global styles={GLOBAL_STYLES} />
+		<div className='app'>
+			<Router>
+				<Header />
+				<Routes>
+				<Route path='/' element={<CarsList cars={carsList} />} />
+				<Route path='/favorites' element={<SavedCarsList />} />
+				</Routes>
+				<Global styles={GLOBAL_STYLES} />
+			</Router>
 		</div>
 	);
 };

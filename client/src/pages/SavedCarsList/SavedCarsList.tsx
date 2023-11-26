@@ -23,10 +23,6 @@ const SavedCarsList: React.FC = observer(() => {
 		}
 	};
 
-	if (savedCars.length === 0) {
-		return <div>У вас нет сохраненных автомобилей.</div>;
-	}
-
 	return (
 		<div className='saved-cars-page'>
 			<div className='saved-cars-count'>
