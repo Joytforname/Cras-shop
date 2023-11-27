@@ -8,12 +8,10 @@ interface SaveBtnProps {
 
 const SaveBtn: React.FC<SaveBtnProps> = ({ status, carSaver, saveStatus }) => {
 	const btnSwitcher = (e: React.MouseEvent<HTMLButtonElement>): void => {
-		e.currentTarget.classList.toggle('active-save-btn');
 		if (carSaver) {
 			carSaver(e);
 		}
 	};
-
 	return status ? (
 		saveStatus ? (
 			<button
