@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { Car } from '../graphql/generated';
 import { Query } from '../graphql/generated';
 
