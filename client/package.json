@@ -6,7 +6,6 @@
   "license": "MIT",
   "scripts": {
     "start": "vite",
-	"mystart": "cd ../server && npm i",
     "build": "tsc && vite build",
     "generate": "graphql-codegen"
   },

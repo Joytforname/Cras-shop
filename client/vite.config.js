@@ -7,7 +7,7 @@ export default defineConfig({
     outDir: "dist",
   },
   server: {
-    port: 4000,
+    port: 3000,
   },
   esbuild: {
     logOverride: { "this-is-undefined-in-esm": "silent" },
