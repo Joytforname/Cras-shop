@@ -32,7 +32,8 @@
 .trash-btn:active {
 	border: none;
 	background-color: var(--red-2);
-	.trash-icon {
+}
+
+.trash-btn:active:first-child {
 		fill: var(--gray-0-white);
-	}
 }
