@@ -1,8 +1,7 @@
 import { Car } from '../graphql/generated';
 import { Query } from '../graphql/generated';
 
-const url = 'http://localhost:4000/api';
-
+const url = 'https://cars-shop-server.onrender.com/api';
 
 type AllCarsResponse = {
 	data: {
