@@ -8,7 +8,7 @@ const Heder = () => {
 	return (
 		<div className='header'>
 			<NavLink to='/'>
-			<div className='logo'></div>
+				<div className='logo'></div>
 			</NavLink>
 			<NavLink className='link h3-title' to='/'>
 				<CtalogBtn />
@@ -18,7 +18,7 @@ const Heder = () => {
 				<div className='location h4-title'>
 					Москва, Волгоградский пр-кт, 43, стр 1
 				</div>
-				<div className='tel h4-title'>+7 800 555 35 35</div>
+				<div className='tel h4-title'>+7 000 111 22 22</div>
 			</div>
 			<NavLink to='/favorites' className='link h3-title'>
 				<div className='saved-btn'>
