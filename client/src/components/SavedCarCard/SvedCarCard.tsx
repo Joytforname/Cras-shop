@@ -19,7 +19,7 @@ const SavedCarCard = ({ car }: CarProps) => {
 		<div className='saved-item-card'>
 			<img
 				className='saved-item-img'
-				src={`http://localhost:4000${car.img_src}`}
+				src={`http://52.41.36.82:4000${car.img_src}`}
 				alt={`${car.brand} ${car.model}`}
 			/>
 			<div className='saved-item-info'>

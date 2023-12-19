@@ -31,14 +31,14 @@ const CarCard = observer(({ car }: CarProps) => {
 			{car.availability ? (
 				<img
 					className='item-img'
-					src={`http://localhost:4000${car.img_src}`}
+					src={`https://54.191.253.12:4000${car.img_src}`}
 					alt={`${car.brand} ${car.model}`}
 				/>
 			) : (
 				<div className='item-not-available'>
 					<img
 						className='item-not-available-img'
-						src={`http://localhost:4000${car.img_src}`}
+						src={`https://54.191.253.12:4000${car.img_src}`}
 						alt={`${car.brand} ${car.model}`}
 					/>
 					<div className='item-not-available-back'>
@@ -62,12 +62,11 @@ const CarCard = observer(({ car }: CarProps) => {
 			<div className='item-buttons'>
 				<BuyBtn status={car.availability} />
 
-					<SaveBtn
-						saveStatus={saveStatus}
-						status={car.availability}
-						carSaver={handleSaveCar}
-					/>
-				
+				<SaveBtn
+					saveStatus={saveStatus}
+					status={car.availability}
+					carSaver={handleSaveCar}
+				/>
 			</div>
 		</div>
 	);

@@ -18,7 +18,7 @@ const Heder = () => {
 				<div className='location h4-title'>
 					Москва, Волгоградский пр-кт, 43, стр 1
 				</div>
-				<div className='tel h4-title'>+7 800 555 35 35</div>
+				<div className='tel h4-title'>+7 000 000 00 00</div>
 			</div>
 			<NavLink to='/favorites' className='link h3-title'>
 				<div className='saved-btn'>
